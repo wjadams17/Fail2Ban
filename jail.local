@@ -1,4 +1,4 @@
-# curl -o /path/to/jail.local \
+# curl -o /etc/fail2ban/ \
 #  https://raw.githubusercontent.com/wjadams17/Fail2Ban/main/jail.local
 
 # fail2ban-client -t

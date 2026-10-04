@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-# chmod +x fail2ban-sync.sh
+# chmod +x fail2ban_install.sh
 # sudo ./fail2ban_install.sh
+
+# curl -fsSL https://raw.githubusercontent.com/wjadams17/fail2ban/main/fail2ban_install.sh | sudo bash
+
 
 set -euo pipefail
 
