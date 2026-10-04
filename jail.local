@@ -1,0 +1,27 @@
+# curl -o /path/to/jail.local \
+#  https://raw.githubusercontent.com/wjadams17/Fail2Ban/main/jail.local
+
+# fail2ban-client -t
+# fail2ban-client reload
+# fail2ban-client status
+
+# sudo systemctl restart fail2ban
+# sudo systemctl restart fail2ban
+
+[DEFAULT]
+# Whitelist localhost and your local IP/subnet
+ignoreip = 127.0.0.1/8 ::1 18.25.0.0/19
+
+# Ban the offending IP for 9999 days if they fail 5 times within 60 minutes
+maxretry = 5
+findtime = 1h
+bantime = 9999d
+
+# Set your firewall backend (e.g., auto, ufw, nftables, iptables)
+banaction = auto
+
+[sshd]
+enabled = true
+
+[nginx-http-auth]
+enabled = true
