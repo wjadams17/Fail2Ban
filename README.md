@@ -6,6 +6,9 @@ sudo service fail2ban status
 sudo fail2ban-client set sshd banip 1.2.3.4  
 sudo fail2ban-client set sshd unbanip 1.2.3.4  
 
+To check the SSH jail:
 sudo fail2ban-client get sshd bantime (in seconds)  
 sudo fail2ban-client get sshd maxretry (in seconds)  
 sudo fail2ban-client get sshd findtime (in seconds)  
+sudo fail2ban-client get sshd logpath
+sudo fail2ban-client get sshd actions
