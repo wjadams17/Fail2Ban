@@ -1,5 +1,4 @@
 # curl -o /etc/fail2ban/ \
-#  https://raw.githubusercontent.com/wjadams17/Fail2Ban/main/jail.local
 
 # fail2ban-client -t
 # fail2ban-client reload
@@ -10,7 +9,7 @@
 
 [DEFAULT]
 # Whitelist localhost and your local IP/subnet
-ignoreip = 127.0.0.1/8 ::1 18.25.0.0/19
+ignoreip = 127.0.0.1/8 ::1 18.25.0.0/19 100.64.0.0/10 10.0.0.0/8
 
 # Ban the offending IP for 9999 days if they fail 5 times within 60 minutes
 maxretry = 5
