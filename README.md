@@ -11,4 +11,5 @@ sudo fail2ban-client get sshd bantime (in seconds)
 sudo fail2ban-client get sshd maxretry (in seconds)  
 sudo fail2ban-client get sshd findtime (in seconds)  
 sudo fail2ban-client get sshd logpath
-sudo fail2ban-client get sshd actions
+sudo fail2ban-client get sshd actions  
+sudo fail2ban-client status sshd  
